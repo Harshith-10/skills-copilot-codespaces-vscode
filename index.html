@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello World</title>
+</head>
+<body>
+	<p id="paragraph">Hello</p>
+	<script type="text/javascript">
+		document.getElementById("paragraph").addEventListener("mouseover", function(){
+			document.getElementById("paragraph").style.backgroundColor = "red";
+		});
+
+        document.getElementById("paragraph").addEventListener("dblclick", function(){
+			document.getElementById("paragraph").style.fontSize = "24px";
+		});
+
+        document.getElementById("paragraph").addEventListener("contextmenu", function(){
+			document.getElementById("paragraph").style.color = "green";
+		});
+
+        document.getElementById("paragraph").addEventListener("click", function(e){
+			document.getElementById("paragraph").innerHTML = "Hello, World!";
+		});
+	</script>
+</body>
+</html>
